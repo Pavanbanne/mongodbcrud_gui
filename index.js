@@ -7,7 +7,7 @@ const app = express()
 const port = 3000
 
 //mongo connection
-mongoose.connect('mongodb://localhost:27017/branddb').then(
+mongoose.connect('mongodb+srv://pawan:12345@cluster0.zykhc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0').then(
     ()=> console.log('DB Connection successful') 
 ).catch(
     err=> console.err('Error connectind to Mongodb',err)
